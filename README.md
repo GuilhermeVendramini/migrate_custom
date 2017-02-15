@@ -67,15 +67,15 @@ Opções:
  --limit                                   Limit on the number of items to process in each migration  
 
  --tag                                     Name of the migration tag to import         
-                                                                          
+
  --update                                   In addition to processing unprocessed items from the source, update previously-imported items with the current data
 
 Aliases: mi
 
 
-# DICA:
+## DICA:
 
-## Habilite o módulo os módulos "config_update" e "config_update_ui" para registrar as alterações do install .yml
+Habilite os módulos "config_update" e "config_update_ui" para registrar as alterações do install .yml
 
 
 # Comandos para migrar os conteúdos
