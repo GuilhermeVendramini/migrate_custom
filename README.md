@@ -31,6 +31,7 @@ migrate-reset-status - Sets a migration status to Idle if it's gotten stuck.
 migrate-messages - Lists any messages associated with a migration import.
 
 Examples:
+
  migrate-import --all                      Perform all migrations      
 
  migrate-import --group=beer               Import all migrations in the beer group    
@@ -42,21 +43,31 @@ Examples:
  migrate-import beer_term,beer_node        Import new terms and nodes  
 
  migrate-import beer_user --limit=2        Import no more than 2 users  
-                                  
+
  migrate-import beer_user --idlist=5       Import the user record with source ID 5
 
 Argumentos:
+
  migration                                 ID of migration(s) to import. Delimit multiple using commas.
 
 Opções:
- --all                                     Process all migrations.                                                                                              
- --execute-dependencies                    Execute all dependent migrations first.                                                                              
- --feedback                                Frequency of progress messages, in items processed                                                                   
- --force                                   Force an operation to run, even if all dependencies are not satisfied                                                
- --group                                   A comma-separated list of migration groups to import                                                                 
- --idlist                                  Comma-separated list of IDs to import                                                                                
- --limit                                   Limit on the number of items to process in each migration                                                            
- --tag                                     Name of the migration tag to import                                                                                  
+
+ --all                                     Process all migrations.   
+
+ --execute-dependencies                    Execute all dependent migrations first. 
+
+ --feedback                                Frequency of progress messages, in items processed    
+
+ --force                                   Force an operation to run, even if all dependencies are not satisfied    
+
+ --group                                   A comma-separated list of migration groups to import      
+
+ --idlist                                  Comma-separated list of IDs to import           
+
+ --limit                                   Limit on the number of items to process in each migration  
+
+ --tag                                     Name of the migration tag to import         
+                                                                          
  --update                                   In addition to processing unprocessed items from the source, update previously-imported items with the current data
 
 Aliases: mi
