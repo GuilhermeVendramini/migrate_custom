@@ -93,7 +93,7 @@ drush mi custom_user
 drush mi custom_files
 
 
-# ESTRUTURA EXEMPLO UTILIZADA:
+# ESTRUTURA DO EXEMPLO UTILIZADA:
 
 ## DATA BASE
 
