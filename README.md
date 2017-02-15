@@ -1,10 +1,10 @@
-## Este módulo é um exemplo de migração de uma fonte não Drupal
+# Este módulo é um exemplo de migração de uma fonte não Drupal
 
 # Coloque o seguinte código no settings.php:
 
-// Note the key 'migrate' here is important.
+Note the key 'migrate' here is important.
+
 $databases['migrate']['default'] = array (
- // The database that contains the source data we're going to import.
  'database' => 'database_name',
  'username' => 'user',
  'password' => 'pass',
@@ -16,7 +16,7 @@ $databases['migrate']['default'] = array (
 );
 
 
-## Drush commands supported include:
+# Drush commands supported include:
 
 migrate-status - Lists migrations and their status.
 migrate-import - Performs import operations.
@@ -51,34 +51,34 @@ Opções:
 Aliases: mi
 
 
-## DICA:
+# DICA:
 
-# Habilite o módulo os módulos "config_update" e "config_update_ui" para registrar as alterações do install .yml
+## Habilite o módulo os módulos "config_update" e "config_update_ui" para registrar as alterações do install .yml
 
 
-## Comandos para migrar os conteúdos
+# Comandos para migrar os conteúdos
 
-# Taxonomias:
+## TAXONOMIAS:
 
 drush mi custom_tags
 
-# USER:
+## USER:
 
 drush mi custom_user
 
-# FILES 
+## FILES 
 
 drush mi custom_files
 
 
-## ESTRUTURA EXEMPLO UTILIZADA:
+# ESTRUTURA EXEMPLO UTILIZADA:
 
-# DATA BASE
+## DATA BASE
 
 create database oldsite;
 
 
-# TAXONOMIAS
+## TAXONOMIAS
 
 CREATE TABLE categories (
 	cid int,
@@ -99,7 +99,7 @@ INSERT INTO categories (cid,name,description)
 VALUES (4,'política','desc política');
 
 
-# USUÀRIOS
+## USUÀRIOS
 
 CREATE TABLE users (
 	uid int,
@@ -116,7 +116,7 @@ INSERT INTO users (uid,name,email,pass,login)
 VALUES (2,'Carol','carol@teste.com','1234','carol');
 
 
-# ARQUIVOS
+## ARQUIVOS
 
 CREATE TABLE files (
 	fid int,
