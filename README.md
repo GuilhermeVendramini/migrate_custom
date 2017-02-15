@@ -19,19 +19,30 @@ $databases['migrate']['default'] = array (
 # Drush commands supported include:
 
 migrate-status - Lists migrations and their status.
+
 migrate-import - Performs import operations.
+
 migrate-rollback - Performs rollback operations.
+
 migrate-stop - Cleanly stops a running operation.
+
 migrate-reset-status - Sets a migration status to Idle if it's gotten stuck.
+
 migrate-messages - Lists any messages associated with a migration import.
 
 Examples:
- migrate-import --all                      Perform all migrations                                        
- migrate-import --group=beer               Import all migrations in the beer group                       
- migrate-import --tag=user                 Import all migrations with the user tag                       
+ migrate-import --all                      Perform all migrations      
+
+ migrate-import --group=beer               Import all migrations in the beer group    
+
+ migrate-import --tag=user                 Import all migrations with the user tag
+
  migrate-import --group=beer --tag=user    Import all migrations in the beer group and with the user tag 
- migrate-import beer_term,beer_node        Import new terms and nodes                                    
- migrate-import beer_user --limit=2        Import no more than 2 users                                   
+
+ migrate-import beer_term,beer_node        Import new terms and nodes  
+
+ migrate-import beer_user --limit=2        Import no more than 2 users  
+                                  
  migrate-import beer_user --idlist=5       Import the user record with source ID 5
 
 Argumentos:
