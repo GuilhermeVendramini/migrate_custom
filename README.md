@@ -99,12 +99,12 @@ drush mi custom_ct_page
 
 # ESTRUTURA DO EXEMPLO UTILIZADA:
 
-## DATA BASE
+## Data base
 
 create database oldsite;
 
 
-## TAXONOMIAS
+## Categorias
 
 CREATE TABLE categories (
 	cid int,
@@ -125,7 +125,7 @@ INSERT INTO categories (cid,name,description)
 VALUES (4,'política','desc política');
 
 
-## USUÀRIOS
+## Usuários
 
 CREATE TABLE users (
 	uid int,
@@ -142,7 +142,7 @@ INSERT INTO users (uid,name,email,pass,login)
 VALUES (11,'Carol','carol@teste.com','1234','carol');
 
 
-## ARQUIVOS
+## Arquivos
 
 CREATE TABLE files (
 	fid int,
@@ -154,7 +154,7 @@ INSERT INTO files (fid,file_name,file_filepath)
 VALUES (18,'teste.jpg','sites/default/files/teste.jpg');
 
 
-## CONTEÚDO
+## Conteúdo
 
 CREATE TABLE content (
 	con_id int,
@@ -167,7 +167,7 @@ CREATE TABLE content (
 INSERT INTO content (con_id,title,body,status,autor) 
 VALUES (1,'Teste Import 1','Corpo teste import',1,10);
 
-## TABELA DE RELACIONAMENTO DE FILES E CONTENT
+## Tabela de relacionamento de files e content
 
 CREATE TABLE content_files (
 	id int,
@@ -179,7 +179,7 @@ INSERT INTO content_files (id,con_id,fid)
 VALUES (1,1,18);
 
 
-## TABELA DE RELACIONAMENTO DE CATEGORIES E CONTENT
+## Tabela de relacionamento de categorias e content
 
 CREATE TABLE content_cat (
 	id int,
