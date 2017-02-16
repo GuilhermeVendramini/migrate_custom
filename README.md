@@ -167,7 +167,7 @@ CREATE TABLE content (
 INSERT INTO content (con_id,title,body,status,autor) 
 VALUES (1,'Teste Import 1','Corpo teste import',1,10);
 
-## TABELA DE RELACIONAMENTO DE FILES e CONTENT
+## TABELA DE RELACIONAMENTO DE FILES E CONTENT
 
 CREATE TABLE content_files (
 	id int,
@@ -179,7 +179,7 @@ INSERT INTO content_files (id,con_id,fid)
 VALUES (1,1,18);
 
 
-## TABELA DE RELACIONAMENTO DE CATEGORIES e CONTENT
+## TABELA DE RELACIONAMENTO DE CATEGORIES E CONTENT
 
 CREATE TABLE content_cat (
 	id int,
