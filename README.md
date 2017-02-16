@@ -80,19 +80,19 @@ Habilite os módulos "config_update" e "config_update_ui" para registrar as alte
 
 # Comandos para migrar os conteúdos
 
-## TAXONOMIAS:
+## Tags:
 
 drush mi custom_tags
 
-## USER:
+## User:
 
 drush mi custom_user
 
-## FILES 
+## Files 
 
 drush mi custom_files
 
-## CONTENT
+## Content
 
 drush mi custom_ct_page
 
