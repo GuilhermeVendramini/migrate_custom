@@ -139,6 +139,32 @@ INSERT INTO `files` VALUES (16,'teste.jpg','sites/default/files/teste.jpg','/sit
 UNLOCK TABLES;
 
 --
+-- Table structure for table `page`
+--
+
+DROP TABLE IF EXISTS `page`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `page` (
+  `pid` int(11) DEFAULT NULL,
+  `titulo` varchar(255) DEFAULT NULL,
+  `content` varchar(255) DEFAULT NULL,
+  `published` int(11) DEFAULT NULL,
+  `user` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `page`
+--
+
+LOCK TABLES `page` WRITE;
+/*!40000 ALTER TABLE `page` DISABLE KEYS */;
+INSERT INTO `page` VALUES (1,'Page import test 1','Corpo teste import',1,10),(2,'Page import test 2','Corpo teste import',0,11);
+/*!40000 ALTER TABLE `page` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -173,4 +199,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-02-16 17:03:40
+-- Dump completed on 2017-02-16 18:08:57

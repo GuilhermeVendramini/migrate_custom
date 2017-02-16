@@ -192,3 +192,21 @@ VALUES (1,1,4);
 
 INSERT INTO content_cat (id,con_id,cid) 
 VALUES (2,1,3);
+
+## EXERCÍCIO
+
+Migrar os conteúdos da tabela abaixo para o tipo de conteúdo "page":
+
+CREATE TABLE page (
+	pid int,
+	titulo varchar(255),
+	content varchar(255),
+	published int,
+	user int
+);
+
+INSERT INTO page (pid,titulo,content,published,user) 
+VALUES (1,'Page import test 1','Corpo teste import',1,10);
+
+INSERT INTO page (pid,titulo,content,published,user) 
+VALUES (2,'Page import test 2','Corpo teste import',0,11);
