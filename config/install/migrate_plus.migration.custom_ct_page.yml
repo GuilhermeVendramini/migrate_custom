@@ -3,7 +3,6 @@ label: Content Type Page
 source:
   plugin: custom_ct_page
 process:
-  nid: con_id
   type:
     plugin: default_value
     default_value: article

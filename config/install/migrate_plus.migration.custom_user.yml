@@ -3,7 +3,6 @@ label: User accounts
 source:
   plugin: custom_user
 process:
-  uid: uid
   name: name
   pass: pass
   mail: email
