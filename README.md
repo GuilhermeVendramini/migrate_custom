@@ -92,6 +92,10 @@ drush mi custom_user
 
 drush mi custom_files
 
+## CONTENT
+
+drush mi custom_ct_page
+
 
 # ESTRUTURA DO EXEMPLO UTILIZADA:
 
@@ -132,10 +136,10 @@ CREATE TABLE users (
 );
 
 INSERT INTO users (uid,name,email,pass,login)
-VALUES (1,'Laura','laura@teste.com','123','laura');
+VALUES (10,'Laura','laura@teste.com','123','laura');
 
 INSERT INTO users (uid,name,email,pass,login)
-VALUES (2,'Carol','carol@teste.com','1234','carol');
+VALUES (11,'Carol','carol@teste.com','1234','carol');
 
 
 ## ARQUIVOS
@@ -147,6 +151,44 @@ CREATE TABLE files (
 );
 
 INSERT INTO files (fid,file_name,file_filepath) 
-VALUES (15,'teste.jpg','sites/default/files/teste.jpg');
+VALUES (18,'teste.jpg','sites/default/files/teste.jpg');
 
 
+## CONTEÚDO
+
+CREATE TABLE content (
+	con_id int,
+	title varchar(255),
+	body varchar(255),
+	status int,
+	autor int
+);
+
+INSERT INTO content (con_id,title,body,status,autor) 
+VALUES (1,'Teste Import 1','Corpo teste import',1,10);
+
+## TABELA DE RELACIONAMENTO DE FILES e CONTENT
+
+CREATE TABLE content_files (
+	id int,
+	con_id int,
+	fid int
+);
+
+INSERT INTO content_files (id,con_id,fid) 
+VALUES (1,1,18);
+
+
+## TABELA DE RELACIONAMENTO DE CATEGORIES e CONTENT
+
+CREATE TABLE content_cat (
+	id int,
+	con_id int,
+	cid int
+);
+
+INSERT INTO content_cat (id,con_id,cid) 
+VALUES (1,1,4);
+
+INSERT INTO content_cat (id,con_id,cid) 
+VALUES (2,1,3);
