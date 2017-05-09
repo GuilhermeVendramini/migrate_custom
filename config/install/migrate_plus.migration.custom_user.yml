@@ -1,5 +1,6 @@
 id: custom_user
 label: User accounts
+migration_group: custom_user
 source:
   plugin: custom_user
 process:
