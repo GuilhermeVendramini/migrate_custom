@@ -2,6 +2,7 @@
 # migration as an optional dependency to ensure d6_file runs first.
 id: custom_files
 label: Files
+migration_group: custom_files
 source:
   plugin: custom_files
   constants:
