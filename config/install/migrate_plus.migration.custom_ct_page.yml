@@ -1,5 +1,6 @@
 id: custom_ct_page
 label: Content Type Page
+migration_group: custom_ct_page
 source:
   plugin: custom_ct_page
 process:
